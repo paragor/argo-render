@@ -1,0 +1,16 @@
+replicaCount: @<< (datasource "file" "/examples/complete/config/settings.json").app.replicas >>@
+
+image:
+  repository: nginx
+  tag: "1.25"
+
+service:
+  port: @<< (datasource "file" "/examples/complete/config/settings.json").app.port >>@
+
+config:
+  # abs path from root of the dir
+  appName: @<< (datasource "file" "/examples/complete/config/settings.json").app.name >>@
+  dbHost: @<< (datasource "file" "/examples/complete/config/settings.json").database.host >>@
+  dbPort: @<< (datasource "file" "/examples/complete/config/settings.json").database.port >>@
+  # or relative path
+  dbName: @<< (datasource "file" "./config/settings.json").database.name >>@

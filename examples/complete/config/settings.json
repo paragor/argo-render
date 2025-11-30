@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "demo-application",
+    "replicas": 3,
+    "port": 8080
+  },
+  "database": {
+    "host": "postgres.example.com",
+    "port": 5432,
+    "name": "demo_db"
+  },
+  "secrets": {
+    "api_key": "super-secret-api-key",
+    "db_password": "super-secret-password"
+  }
+}

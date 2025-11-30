@@ -1,0 +1,10 @@
+helm:
+  chart: renovate
+  repo: https://docs.renovatebot.com/helm-charts
+  version: 45.24.0
+  values:
+    - values.yaml
+  output: ./helm-output.yaml
+
+kustomize:
+  path: .

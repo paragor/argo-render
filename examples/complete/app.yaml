@@ -1,0 +1,9 @@
+helm:
+  chart: ./chart
+  # releaseName and namespace are taken from ARGOCD_APP_NAME and ARGOCD_APP_NAMESPACE env vars
+  values:
+    - values.yaml
+  output: ./helm-output.yaml
+
+kustomize:
+  path: .

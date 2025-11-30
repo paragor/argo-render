@@ -1,0 +1,45 @@
+{
+  "outputs": {
+    "cluster_id": {
+      "value": 1,
+      "type": "number"
+    },
+    "cluster_name": {
+      "value": "hoba",
+      "type": "string"
+    },
+    "k8s_version": {
+      "value": "1.33.4",
+      "type": "string"
+    },
+    "kubeconfig": {
+      "value": "kubeconfig_content",
+      "type": "string",
+      "sensitive": true
+    },
+    "kubeconfig_data": {
+      "value": {
+        "client_certificate": "client_certificate_content",
+        "client_key": "client_key_content",
+        "cluster_ca_certificate": "client_ca_content",
+        "cluster_name": "hoba",
+        "endpoint": "https://172.16.12.200:6443",
+        "host": "172.16.12.200",
+        "port": 6443
+      },
+      "type": [
+        "object",
+        {
+          "client_certificate": "string",
+          "client_key": "string",
+          "cluster_ca_certificate": "string",
+          "cluster_name": "string",
+          "endpoint": "string",
+          "host": "string",
+          "port": "number"
+        }
+      ],
+      "sensitive": true
+    }
+  }
+}
